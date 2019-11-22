@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xlmns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form th:action="@{connexion}" method="post">
+    User: <input type="text" th:value="*{nom}" id="nom" name="nom"></br>
+    Pswd : <input th:value="*{password}" id="password" name="password" type="password">
+    <button> Connexion </button>
+ </form>   
+ <form th:action="@{signup}" method="post">
+<p><button> Sign-up </button></p>
+</form>
+
+</body>
+</html>

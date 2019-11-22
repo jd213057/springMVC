@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form th:action="@{signup2}" method="post">
+    User: <input type="text" th:value="*{nom}" id="nom" name="nom"></br>
+    Pswd : <input th:value="*{password}" id="password" name="password" type="password">
+    <button> Create Account </button>
+</body>
+</html>
